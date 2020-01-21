@@ -11,7 +11,7 @@ import time
 numPlayers = int(input("Introduce number of players: "))
 numRounds = int(input("Introduce the number of rounds (If you introduce 0, then by default there'd be 2 rounds): "))
 
-
+"""
 def allResults(): #Creates by comprehension all combinations possible for a 3 dices throw
     return [(i,j) for i in range(1,7) for j in range(1,7)]
 
@@ -24,7 +24,7 @@ def checkResult(result):
                 if k[1] == j:
                     allRe.remove(j)
     return allRe #Returns the edited combinations list
-
+"""
 
 def randomDice():
     return random.randint(1,6) #Generates a dice throw result (1 - 6)
@@ -59,6 +59,4 @@ else:
 time.sleep(5)
 print("The final results of the game are: ")
 print(finalResults)
-print("The remaining combinations possible are: ")
-print(checkResult(finalResults))
 
