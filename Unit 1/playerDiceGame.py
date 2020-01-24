@@ -43,7 +43,7 @@ def assembleRounds(nplayers, nrounds, playersdict):
 def resultsByPlayer(playersdict):
     for i in playersdict.keys():
         print(str(i)+" Results: ")
-        print(playersdict[i])
+        print(playersdict[i])            
 
 
 if numRounds != 0:
