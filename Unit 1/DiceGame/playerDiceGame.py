@@ -24,8 +24,9 @@ def throwPlayer(nplayers, playersdict): #Full round results
 
 def createPlayers(nplayers, playersdict):
     for i in range(1, nplayers+1):
-        playersdict.update({"Player"+str(i):[]})
+        playersdict["Player"+str(i)] = []
     time.sleep(2)
+    
     print("Players created")
 
 def assembleRounds(nplayers, nrounds, playersdict):
@@ -54,6 +55,5 @@ else:
 time.sleep(5)
 print("The final results of the game are: ")
 print(finalResults)
-print("Player1 Results: ")
 resultsByPlayer(players)
 
